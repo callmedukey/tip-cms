@@ -12,13 +12,14 @@ import { PartnerHotelsCarousel } from './collections/hotel-carousel'
 import { ExperiencesTopCarousel } from './collections/experiences-top-carousel'
 import { ExperiencesBottomCarousel } from './collections/experiences-bottom-carousel'
 import { Experiences } from './collections/experiences'
+import { Countries } from './collections/countries'
 export default buildConfig({
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Media, PartnerHotels, PartnerHotelsCarousel,Experiences, ExperiencesTopCarousel, ExperiencesBottomCarousel],
+  collections: [Users, Media, PartnerHotels, PartnerHotelsCarousel,Experiences, ExperiencesTopCarousel, ExperiencesBottomCarousel, Countries],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },

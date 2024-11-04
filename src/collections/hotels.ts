@@ -39,6 +39,14 @@ export const PartnerHotels: CollectionConfig = {
       },
     },
     {
+      name: "country",
+      relationTo: "countries",
+      type: "relationship",
+      label: "Country",
+      required: true,
+    },
+    {
+
       name: "en_keywords",
       type: "text",
       label: "English Keywords",

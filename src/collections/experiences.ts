@@ -12,6 +12,14 @@ export const Experiences: CollectionConfig = {
   },
   fields: [
     {
+      name: "country",
+      relationTo: "countries",
+      type: "relationship",
+      label: "Country",
+      required: true,
+      hasMany: true,
+    },
+    {
       name: "en_title",
       type: "text",
       label: "English Title",
